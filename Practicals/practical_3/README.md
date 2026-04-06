@@ -303,24 +303,6 @@ Here is my step-by-step process:
 
 ---
 
-## My Recommendations from the Field
-
-After 10 years of designing systems, here is my practical advice on using these two diagram types:
-
-**1. Always draw the class diagram first.** It forces you to model your domain properly before thinking about instances. Skipping it leads to class soup — bloated, poorly structured code that's a nightmare to maintain.
-
-**2. Use object diagrams to stress-test your class design.** I routinely take a class diagram and try to instantiate it with real-world data. If creating valid object diagrams feels awkward or impossible, it's a strong signal that the class design needs revisiting.
-
-**3. Keep diagrams in sync with code.** I've seen too many projects where diagrams become misleading documentation artifacts. Pick a tool that supports round-trip engineering or integrate diagram generation into your CI pipeline.
-
-**4. Use visibility modifiers deliberately.** Don't default everything to `public`. Class diagrams are a great forcing function to think about encapsulation boundaries.
-
-**5. Know your relationship types cold.** The difference between aggregation and composition, or between dependency and association, has real implications in code — particularly around object lifecycle management and memory. Get it right on paper before it costs you in production.
-
-**6. Object diagrams shine in code reviews.** When reviewing a complex instantiation or initialization sequence, sketching a quick object diagram on a whiteboard saves 30 minutes of verbal back-and-forth.
-
----
-
 ## References
 
 - [UML Class Diagrams — GeeksforGeeks](https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-class-diagrams/)
